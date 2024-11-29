@@ -1,0 +1,48 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a80f82;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #photo-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .photo {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: grab;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo:active {
+    cursor: grabbing;
+  }
+  
+  .photo:hover {
+    transform: scale(1.1);
+  }
+  
